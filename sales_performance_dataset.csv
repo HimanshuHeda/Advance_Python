@@ -1,0 +1,17 @@
+Product,Region,Units Sold,Revenue ($),Profit Margin (%),Customer Rating
+Laptop,North,120,240000,15,4.5
+Laptop,South,140,280000,17,4.3
+Laptop,East,130,260000,16,4.4
+Laptop,West,110,220000,14,4.2
+Smartphone,North,300,180000,10,4
+Smartphone,South,350,210000,12,4.1
+Smartphone,East,320,192000,11,4.2
+Smartphone,West,310,186000,10,4
+Tablet,North,80,96000,20,4.7
+Tablet,South,90,108000,22,4.6
+Tablet,East,85,102000,21,4.5
+Tablet,West,70,84000,19,4.4
+Headphones,North,400,80000,8,4.3
+Headphones,South,450,90000,9,4.2
+Headphones,East,420,84000,8,4.4
+Headphones,West,430,86000,9,4.1
