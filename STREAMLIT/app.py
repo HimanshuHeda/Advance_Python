@@ -29,6 +29,13 @@ if agree:
 else:
     st.write("Oh oh! You Don't agree")
 
+hobby= st.multiselect("Subject:",['Adv. Python','Cognitive','Mobile Dev.','Data Comm.'])
+
+if hobby:
+    st.write("Your Hobbies :")
+    for h in hobby:
+        st.write(h)
+
 # localhost:8501
 # streamlit run app.py
 # python -m streamlit run app.py
