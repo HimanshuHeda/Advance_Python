@@ -36,7 +36,7 @@ st.write(filtered_data)
 
 # Sidebar for visualization options
 st.sidebar.header("Visualization Options")
-chart_type = st.sidebar.radio("Choose Chart Type", ["Bar Chart", "Pie Chart"])
+chart_type = st.sidebar.radio("Choose Chart Type", ["Bar Chart", "Pie Chart", "Line Chart", "Scatter Plot", "Histogram"])
 
 # Visualization
 st.subheader("Visualization")
@@ -56,6 +56,31 @@ elif chart_type == "Pie Chart":
     pie_data = filtered_data["Color"].value_counts()
     ax.pie(pie_data, labels=pie_data.index, autopct='%1.1f%%', startangle=90, colors=plt.cm.Paired.colors)
     ax.set_title(f"Car Color Distribution in {selected_region} by {selected_company}")
+
+elif chart_type == "Line Chart":
+    # Line chart for car prices over models
+    ax.plot(filtered_data["Model"], filtered_data["Price ($)"], marker='o', linestyle='-', color="green")
+    ax.set_title(f"Line Chart: Car Prices in {selected_region} by {selected_company}")
+    ax.set_xlabel("Car Model")
+    ax.set_ylabel("Price ($)")
+    plt.xticks(rotation=45)
+
+elif chart_type == "Scatter Plot":
+    # Scatter plot for car prices vs annual income
+    if "Annual Income" in filtered_data.columns:
+        ax.scatter(filtered_data["Annual Income"], filtered_data["Price ($)"], color="red")
+        ax.set_title(f"Scatter Plot: Annual Income vs Price in {selected_region} by {selected_company}")
+        ax.set_xlabel("Annual Income")
+        ax.set_ylabel("Price ($)")
+    else:
+        st.error("The 'Annual Income' column is missing in the dataset.")
+
+elif chart_type == "Histogram":
+    # Histogram for car prices
+    ax.hist(filtered_data["Price ($)"], bins=10, color="purple", edgecolor="black")
+    ax.set_title(f"Histogram: Car Prices in {selected_region} by {selected_company}")
+    ax.set_xlabel("Price ($)")
+    ax.set_ylabel("Frequency")
 
 # Display the chart
 st.pyplot(fig)
