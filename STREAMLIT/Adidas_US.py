@@ -35,8 +35,10 @@ y_axis = st.selectbox("Select Y-axis", columns)
 # Ensure selected columns are numeric
 try:
     # Convert selected columns to numeric (if possible)
-    data[x_axis] = pd.to_numeric(data[x_axis], errors='coerce')
-    data[y_axis] = pd.to_numeric(data[y_axis], errors='coerce')
+    if x_axis in data.columns:
+        data[x_axis] = pd.to_numeric(data[x_axis], errors='coerce')
+    if y_axis in data.columns:
+        data[y_axis] = pd.to_numeric(data[y_axis], errors='coerce')
 
     # Drop NaN values (avoid errors when plotting)
     data = data.dropna(subset=[x_axis, y_axis])
@@ -48,9 +50,12 @@ try:
 
     if chart == "Line Chart":
         # Ensure X-axis is sorted for Line Chart
-        data = data.sort_values(by=x_axis)
-        ax.plot(data[x_axis], data[y_axis], marker='o', linestyle='-')
-        ax.set_title("Line Chart")
+        if pd.api.types.is_numeric_dtype(data[x_axis]):
+            data = data.sort_values(by=x_axis)
+            ax.plot(data[x_axis], data[y_axis], marker='o', linestyle='-')
+            ax.set_title("Line Chart")
+        else:
+            st.error("Line Chart requires a numeric X-axis.")
 
     elif chart == "Bar Chart":
         # Bar Chart requires categorical X-axis
