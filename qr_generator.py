@@ -1,8 +1,7 @@
 import qrcode
 
-data = "https://www.linkedin.com/in/himanshu-heda/"
+# Taking UPI ID as an input 
+upi_id = input("Enter UPI ID: ")    
 
-qr = qrcode.make(data)
-qr.save("linkedin.png")
+#upi://pay?pa=UPI_ID%apn=NAME&Am=AMOUNT&cu=CURRENCY&tn=MESSAGE
 
-print("QR Code Generated Successfully!")
