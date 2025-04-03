@@ -1,0 +1,51 @@
+Kitten_ID,Breed,Age_Months,Weight_kg,Favorite_Toy,Energy_Level,Adopted
+K001,Maine Coon,5,0.9,String,8,No
+K002,Maine Coon,4,2.1,Mouse,10,Yes
+K003,British Shorthair,2,1,Mouse,4,No
+K004,Siamese,8,2.2,Laser Pointer,6,Yes
+K005,Sphynx,4,1.2,String,10,No
+K006,Abyssinian,5,1,Mouse,3,No
+K007,Siamese,6,2.2,Laser Pointer,8,No
+K008,Ragdoll,11,1.1,String,8,Yes
+K009,Bengal,3,1.3,Laser Pointer,4,No
+K010,Persian,9,1.1,Bell,4,Yes
+K011,Abyssinian,8,1,String,3,Yes
+K012,Sphynx,2,1.1,Bell,8,No
+K013,Sphynx,11,2.2,Bell,10,No
+K014,Abyssinian,7,1.3,Feather,10,No
+K015,Siamese,4,1.6,Feather,3,Yes
+K016,Maine Coon,5,0.8,Ribbon,5,No
+K017,Ragdoll,12,1.7,Bell,7,No
+K018,Siamese,4,2.1,String,10,Yes
+K019,Bengal,1,2.2,Bell,7,Yes
+K020,Abyssinian,7,0.9,Mouse,8,Yes
+K021,Persian,8,1.4,Bell,3,Yes
+K022,Maine Coon,4,2.4,Bell,9,Yes
+K023,Bengal,7,1.4,Mouse,8,No
+K024,Bengal,5,1.5,Feather,8,Yes
+K025,Ragdoll,8,1.3,Laser Pointer,5,No
+K026,Abyssinian,11,1.4,Bell,9,No
+K027,Persian,2,1.9,Laser Pointer,6,Yes
+K028,Abyssinian,5,1,Ribbon,5,No
+K029,Siamese,1,1.6,Ball,7,No
+K030,Bengal,9,2.3,Bell,8,Yes
+K031,Maine Coon,7,2.4,Feather,3,No
+K032,Bengal,12,0.8,Ball,10,No
+K033,Bengal,4,0.9,Mouse,8,No
+K034,Sphynx,3,2.2,String,10,No
+K035,Persian,1,0.9,Laser Pointer,5,Yes
+K036,Abyssinian,11,1,Laser Pointer,6,Yes
+K037,Ragdoll,7,2.1,Ball,10,Yes
+K038,Bengal,12,1.4,Bell,3,No
+K039,Bengal,8,1.9,Mouse,5,Yes
+K040,Persian,12,1.9,String,7,Yes
+K041,British Shorthair,12,2.3,Feather,5,Yes
+K042,Abyssinian,7,2.1,Ball,10,Yes
+K043,Abyssinian,4,1.1,Mouse,6,Yes
+K044,Sphynx,7,2.4,Ball,9,No
+K045,Persian,3,0.8,Bell,5,No
+K046,Abyssinian,10,0.8,Bell,9,No
+K047,Siamese,11,2.1,Bell,7,No
+K048,Persian,2,1.3,Mouse,3,Yes
+K049,Maine Coon,5,1.9,Mouse,5,No
+K050,Maine Coon,2,2,Ball,9,No
