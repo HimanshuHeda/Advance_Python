@@ -1,7 +1,3 @@
-Here's a well-structured **README** for **Advanced Python**:  
-
----
-
 # 🚀 Advanced Python  
 
 ## 📌 Overview  
